@@ -48,10 +48,6 @@ int main(void) {
 	        HAL_Delay(2000);
 
 	        // 显示温度值
-	        HT16K33_DisplayTemperature(&ht16k33, 23.5f, 1);
-	        HAL_Delay(2000);
-
-	        // 使用自定义符号显示
 	        HT16K33_DisplayNumber(&ht16k33, 95.5, 1, SEGMENT_DEGREE); // 显示95.5°
 	        HAL_Delay(2000);
 
